@@ -1,0 +1,53 @@
+{
+	"name": "portfolio",
+	"version": "0.1.0",
+	"homepage": "https://tristanvaramashvili.dev/",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.35",
+		"@fortawesome/free-solid-svg-icons": "^5.15.3",
+		"@fortawesome/react-fontawesome": "^0.1.14",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^11.2.7",
+		"@testing-library/user-event": "^12.8.3",
+		"firebase": "^8.9.1",
+		"font-awesome": "^4.7.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-icons": "^4.2.0",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "^5.0.1",
+		"react-transition-group": "^4.4.2",
+		"web-vitals": "^0.2.4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.3%",
+			"not ie 11",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			">0.3%",
+			"not ie 11",
+			"not dead",
+			"not op_mini all"
+		]
+	},
+	"devDependencies": {
+		"gh-pages": "^3.2.3"
+	}
+}

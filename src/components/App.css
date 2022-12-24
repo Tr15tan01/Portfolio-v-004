@@ -1,0 +1,152 @@
+:root {
+	--round-border: 50%;
+	--border-s: 6px;
+	--full-width: 100vw;
+	--full-height: 100vh;
+	--main-color: rgb(11, 13, 139);
+	--secondary-color: rgb(192, 7, 93);
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+  /* * {    
+    margin: 0;
+    padding: 0 !important;
+} */
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0 !important; 
+	background-color: whitesmoke;
+	color: white;
+	overflow-x: hidden;
+}
+
+section {
+	height: 100vh;
+	/* padding: 36px 48px 0; */
+	margin: 0;
+}
+
+.green {
+	background-color: yellowgreen;
+	width: var(--full-width);
+	height: var(--full-height);
+}
+
+.blue {
+	background-color: rgb(181, 180, 201);
+}
+
+.red {
+  background-image: linear-gradient(to bottom right, #2193b0, #6dd5ed);
+  width: 100%;
+  height: auto; 
+}
+
+.white {
+	background-color: 'white';
+}
+
+.navbar {
+	background-color: #660066;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	z-index: 99;
+	box-shadow: 5px 10px 12px rgba(0, 0, 0, 0.3);
+	margin: auto;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 36px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navbar a:hover {
+	cursor: pointer;
+	background-color: #ff9966;
+	transition: .3s;
+}
+
+/* bg animation */
+.animation-container {
+	background-image: linear-gradient(to bottom right, rgb(75, 8, 58), rgb(100, 9, 9));
+	width: var(--full-width);
+	height: var(--full-height);
+}
+
+.star {
+	background-color: rgb(181, 180, 201);
+	width: 9px;
+	height: 9px;
+	position: relative;
+	top: 200px;
+	left: 200px;
+	border-radius: var(--round-border);
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
+}
+
+.starA {
+	background-color: rgb(181, 180, 201);
+	width: 6px;
+	height: 6px;
+	position: relative;
+	top: 300px;
+	left: 200px;
+	border-radius: var(--round-border);
+	box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* .project {
+	width: 200px;
+  height: 200px;
+  padding: 12px;
+	border-radius: var(--border-s);
+  background-color: var(--main-color);
+  color: #fff;
+  margin: auto;
+}
+
+.project a {
+  color: #fff;
+}
+
+.project-image img{
+  border-radius: var(--border-s);
+  width: 100%;
+  height: 60%;
+} */
+/* 
+.projects-container {
+display: flex;
+padding: 2px;
+align-items: center;
+flex-wrap: wrap;
+justify-content: center;
+} */
+
+.footer {
+	background-color: black;
+	height: 60vh;
+	padding: 36px 48px 0;
+}

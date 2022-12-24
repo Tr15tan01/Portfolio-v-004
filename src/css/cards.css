@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* html {
+  background-color: #f0f0f0;
+} */
+body {
+  /* color: #999999; */
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.card-btn {
+  background-color: dodgerblue;
+  border: 1px solid #cccccc;
+  color: white;
+  padding: 0.5rem;
+  text-transform: lowercase;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: blueviolet;
+}
+.card-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: dodgerblue;
+}
+/* .btn--block {
+  display: block;
+  width: 100%;
+} */
+/* .cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 24px 12px;
+} */
+
+.cards {
+  display: grid;
+	grid-template-columns: auto auto auto auto;
+	width: 100%;
+	padding: 24px;
+}
+
+.card-tile {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  color: gray;
+}
+
+@media only screen and (max-width: 800px) {
+  /* place here CSS for when the screen is more than 1000px wide */
+  .card-tile {
+    width: 100%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding: 24px;
+  }
+}
+/* @media (min-width: 720px) {
+  .card-tile {
+    width: 25%;
+  }
+} */
+
+.card {
+  background-color: white;
+  width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: .2s;
+}
+.card:hover > .card-image {
+  filter: contrast(100%);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card:hover {
+/*   transform: scale(1.01); */
+  cursor: pointer;
+}
+
+.card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(110%);
+  overflow: hidden;
+  position: relative;
+  transition: transform .2s;
+}
+.card-image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+@media (min-width: 40rem) {
+  .card-image::before {
+    padding-top: 66.6%;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.--vocabulary {
+  background-image: url(../media/vocabulary.jpg);
+}
+.--cargadgets {
+  background-image: url(../media/cargadgets.jpg);
+}
+.--weather {
+  background-image: url(../media/weather.jpg);
+}
+.--chatbot {
+  background-image: url(../media/chatbot.jpg);
+}
+.--chat {
+  background-image: url(../media/chat.jpg);
+}
+.--shop {
+  background-image: url(../media/shop.jpg);
+}
+.--quiz {
+  background-image: url(../media/quiz.jpg);
+}
+.card-title {
+  color: #696969;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
