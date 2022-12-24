@@ -5,6 +5,7 @@ import "./navigation.css";
 // import "./js/navbar-scroll.js";
 // import "./js/mouseMove.js";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   const menuBars = useRef(null);
@@ -126,10 +127,12 @@ function App() {
       <section id="about">
         <div className="centered">
           <h1>More About Me</h1>
-          <p>
+          <p className="padded">
             I am skilled programmer in modern front end and server side
             languages. Currently working on many live projects with several
-            users
+            users. I have developed, deployed and maintained projects with
+            several languages and Technologies keeping them up to date on
+            different hosting proviers.
           </p>
         </div>
       </section>
@@ -152,7 +155,7 @@ function App() {
         <Projects />
       </section>
       <section id="contact">
-        <h1>Available Anytime</h1>
+        <Footer />
       </section>
     </>
   );
