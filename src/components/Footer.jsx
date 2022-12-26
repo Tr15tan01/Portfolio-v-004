@@ -5,7 +5,7 @@ const Footer = () => {
   const currYear = new Date().getFullYear();
   return (
     <>
-      <h2>Contact Me</h2>
+      <h3>Contact Me</h3>
       <br />
       <hr />
 
@@ -33,7 +33,10 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="copy"> Copyright &copy; 2020 - {currYear}</div>
+      <div className="copy">
+        {" "}
+        <p className="small">Copyright &copy; 2020 - {currYear}</p>
+      </div>
     </>
   );
 };

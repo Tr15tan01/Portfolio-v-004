@@ -21,10 +21,14 @@ body {
 }
 
 p.padded {
-  margin:24px 124px;
+  margin: 24px 124px;
   line-height: 2em;
 }
 
+p.small {
+  text-transform: lowercase;
+  font-size: 15px;
+}
 /* --- Navigation Menu ------------------------------ */
 
 /* Overlay */
@@ -273,7 +277,7 @@ section#skills {
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   text-transform: uppercase;
 }
@@ -300,9 +304,20 @@ section#contact {
 
 .centered {
   display: flex;
-  align-items: center;
-  justify-content: baseline;
+  align-items: space-between;
+  /* justify-content: space-around; */
   flex-direction: column;
+  padding: 24px;
+  width: 60%;
+}
+
+.centered-avatar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  padding: 24px;
+  width: 60%;
 }
 
 .avatar {
@@ -312,16 +327,74 @@ section#contact {
   border: 6px solid whitesmoke;
 }
 
+/* lists */
+ul.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  list-style-type: none;
+  float: left;
+  margin: auto;
+}
+
+ul.skills li {
+  padding: 6px;
+  cursor: pointer;
+}
+
+ul.skills li:hover {
+  transform: translateX(3px);
+  /* transform: translateY(-2px); */
+  transition: 0.3s;
+}
+
+ul.skills img {
+  height: 24px;
+  margin-right: 12px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+hr {
+  width: 90%;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
   section#home a {
-    top: 1111rem;
-    left: 11rem;
+    top: 1rem;
+    left: 1rem;
   }
 
   .menu-bars {
-    top: 0.5rem;
-    right: 1rem;
+    position: fixed;
+    top: 93%;
+    right: 6px;
   }
 
+  .centered {
+    display: flex;
+    align-items: space-around;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    padding: 4px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  p.padded {
+    margin: 12px auto;
+    line-height: 2em;
+    padding: 6px;
+    /* background-color: red; */
+  }
+
+  ul.skills img {
+    height: 21px;
+    margin-right: 2px;
+  }
 }

@@ -7,6 +7,22 @@ import "./navigation.css";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
+import HTMLLogo from "./media/html5.svg";
+import CSSLogo from "./media/css3.svg";
+import JavascriptLogo from "./media/javascript.svg";
+import GitLogo from "./media/Git.svg";
+import PhpLogo from "./media/php.svg";
+import ReactLogo from "./media/react.svg";
+import NodeLogo from "./media/NodeJS.svg";
+import MysqlLogo from "./media/mysql.svg";
+import MongodbLogo from "./media/mongodb.svg";
+import BootstrapLogo from "./media/bootstrap.svg";
+import GoogleAnalyticsLogo from "./media/google-analytics.svg";
+import SASSLogo from "./media/sass.svg";
+import GithubLogo from "./media/github.svg";
+import MaterialLogo from "./media/material.svg";
+import AWSLogo from "./media/aws.svg";
+
 function App() {
   const menuBars = useRef(null);
   // const menuBars = document.getElementById("menu-bars");
@@ -114,7 +130,7 @@ function App() {
       {/* // <!-- Sections --> */}
       <section id="home">
         <a href="/">TristanVaramashvili.dev</a>
-        <div className="centered">
+        <div className="centered-avatar">
           <h3>Hi I am Tristan Varamashvili</h3>
           <img
             className="avatar"
@@ -138,17 +154,96 @@ function App() {
       </section>
       <section id="skills">
         <div className="centered">
-          <h1>These Are My Strengths</h1>
+          <h1>Skills</h1>
           <h3>Languages, Technologies And Libraries I work with:</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>React</li>
-            <li>SQL</li>
-            <li>Node JS</li>
-          </ul>
+
+          <div className="wrapper">
+            <div className="centered">
+              <ul className="skills">
+                <li>
+                  <img src={HTMLLogo} alt="htllogo" /> HTML
+                </li>
+                <li>
+                  <img src={CSSLogo} alt="Css logo" />
+                  CSS
+                </li>
+                <li>
+                  <img src={JavascriptLogo} alt="Javascript logo" />
+                  JavaScript
+                </li>
+                <li>
+                  {" "}
+                  <img src={GitLogo} alt="Git logo" />
+                  Git
+                </li>
+
+                <li>
+                  <img src={ReactLogo} alt="React logo" />
+                  React
+                </li>
+                <li>
+                  <img src={PhpLogo} alt="PHP logo" />
+                  PHP
+                </li>
+
+                <li>
+                  <img src={NodeLogo} alt="Node logo" />
+                  Node JS
+                </li>
+                <li>
+                  <img src={MysqlLogo} alt="Mysql logo" />
+                  SQL
+                </li>
+                <li>
+                  <img src={MongodbLogo} alt="Mongodb logo" />
+                  MongoDB
+                </li>
+              </ul>
+            </div>
+            {/* second column */}
+            <div className="centered">
+              <ul className="skills">
+                <li>
+                  <img src={BootstrapLogo} alt="Bootstrap Logo" /> Bootstrap
+                </li>
+                <li>
+                  <img src={GoogleAnalyticsLogo} alt="Google Analytics logo" />
+                  Analytics
+                </li>
+                <li>
+                  <img src={SASSLogo} alt="Javascript logo" />
+                  SASS
+                </li>
+                <li>
+                  {" "}
+                  <img src={GithubLogo} alt="Github logo" />
+                  GitHub
+                </li>
+
+                <li>
+                  <img src={SASSLogo} alt="Figma logo" />
+                  Figma
+                </li>
+
+                <li>
+                  <img src={ReactLogo} alt="React logo" />
+                  React
+                </li>
+                <li>
+                  <img src={NodeLogo} alt="Node logo" />
+                  Express JS
+                </li>
+                <li>
+                  <img src={MaterialLogo} alt="Material logo" />
+                  Material UI
+                </li>
+                <li>
+                  <img src={AWSLogo} alt="AWS logo" />
+                  AWS
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section id="projects">
