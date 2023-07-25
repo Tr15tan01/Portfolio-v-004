@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import "./css/App.css";
 import "./navigation.css";
 // import "./js/navbar-scroll.js";
@@ -22,6 +24,7 @@ import SASSLogo from "./media/sass.svg";
 import GithubLogo from "./media/github.svg";
 import MaterialLogo from "./media/material.svg";
 import AWSLogo from "./media/aws.svg";
+import me from "./media/me.jpg";
 
 function App() {
   const menuBars = useRef(null);
@@ -132,10 +135,19 @@ function App() {
         <a href="/">TristanVaramashvili.dev</a>
         <div className="centered-avatar">
           <h3>Hi I am Tristan Varamashvili</h3>
-          <img
+          {/* <img
             className="avatar"
-            alt="avatar"
-            src="https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/271655233_5315589301802476_5753444237774499920_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6yEFh9SaZNkAX9FBztk&tn=kyVXsbLVF0n4cDbz&_nc_ht=scontent.ftbs5-3.fna&oh=00_AfDkrNu01DDaOJ5f2t9iC3EpGABDn1CD22PNZNJKxLfb6A&oe=63A8E685"
+            alt="Avatar Tristan Varamashvili"
+            src={me}
+            loading="lazy"
+          /> */}
+          <LazyLoadImage
+            className="avatar"
+            alt="Avatar Tristan Varamashvili"
+            src={me} // use normal <img> attributes as props
+            effect="blur"
+            beforeLoad={() => console.log("just fuck")}
+            delayTime={1500}
           />
           <h3>Full Stack Web Developer</h3>
         </div>
