@@ -146,7 +146,7 @@ function App() {
             alt="Avatar Tristan Varamashvili"
             src={me} // use normal <img> attributes as props
             effect="blur"
-            beforeLoad={() => console.log("just fuck")}
+            beforeLoad={() => console.log("Good Luck!")}
             delayTime={1500}
           />
           <h3>Full Stack Web Developer</h3>
